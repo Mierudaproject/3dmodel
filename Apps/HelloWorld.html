@@ -29,6 +29,10 @@
     <div id="cesiumContainer"></div>
     <script>
       const viewer = new Cesium.Viewer("cesiumContainer");
+	viewer.camera.flyTo({
+     	destination : Cesium.Cartesian3.fromDegrees(137.0836381, 34.9553336, 3700.0)});
+	    viewer.dataSources.add(Cesium.KmlDataSource.load("./KML/安城市水害ハザードマップ.kml"));
+
     </script>
   </body>
 </html>
